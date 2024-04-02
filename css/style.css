@@ -1,0 +1,55 @@
+header>h1{
+  text-align: center;
+}
+p{
+  text-align: justify;
+}
+
+.main-container{
+  display: flex;
+}
+/*Display Style*/
+.container-item{
+  width: 100%;
+  padding: 24px;
+}
+.container-item>h2{
+  text-align: center;
+}
+.container-result{
+  text-align: center;
+  background-color: aliceblue;
+  padding-top: 8px;
+  padding-bottom: 24px;
+}
+.container-form{
+  text-align: left;
+  background-color: aliceblue;
+  padding: 24px;
+}
+.container-form>div{
+  padding: 8px;
+}
+.form-item{
+  height: 24px;
+  border: 0px;
+  border-radius:8px;
+  background-color: white;
+}
+  
+}
+button{
+  border: 0px;
+  height: 32px;
+  padding-left: 24px;
+  padding-right: 24px;
+  background-color: lightgreen;
+  border-radius: 8px;
+}
+#calculate-button{
+  background-color: coral;
+  color: white;
+}
+.judul{
+  text-align: center;
+}
