@@ -1,55 +1,107 @@
-header>h1{
-  text-align: center;
+@import url('https://font.googleapis.com/css2?family=Nunito:wght@600;700;800;900&display=swap');
+/*font family: 'Nunito', sans-serif; */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
-p{
-  text-align: justify;
+body{
+    min-height: 100vh;
+    background: url('https://wallpapers.com/images/featured/sky-mvehfqz6w2ges2dj.jpg');
+    background-size: cover;
+    font-family: 'Nunito', sans-serif;
 }
-
-.main-container{
-  display: flex;
+.container{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
 }
-/*Display Style*/
-.container-item{
-  width: 100%;
-  padding: 24px;
+.box{
+    min-width: 400px;
+    background: #FAFAFA;
+    border-radius: 38px;
+    text-align: center;
+    position: relative;
 }
-.container-item>h2{
-  text-align: center;
+.box::before{
+    content: '';
+    position: absolute;
+    height: 110%;
+    width: 110%;
+    left: -5%;
+    top: -5%;
+    background-color: rgba(255, 255, 255, 0.3);
+    box-shadow: 0px 0px 166px -31px rgba(0,0,0,0.15);
+    border-radius: 60px;
+    z-index: -1;
 }
-.container-result{
-  text-align: center;
-  background-color: aliceblue;
-  padding-top: 8px;
-  padding-bottom: 24px;
+h1{
+    font-weight: bold;
+    font-size: 36px;
+    padding: 30px 0;
 }
-.container-form{
-  text-align: left;
-  background-color: aliceblue;
-  padding: 24px;
+.content{
+    padding: 0 40px;
 }
-.container-form>div{
-  padding: 8px;
+.input{
+    background: #FFF;
+    box-shadow: 0px 0px 95px -30px rgba(0,0,0,0.15);
+    border-radius: 28px;
+    padding: 20px 0;
+    margin-bottom: 20px;
 }
-.form-item{
-  height: 24px;
-  border: 0px;
-  border-radius:8px;
-  background-color: white;
+.input label{
+    display: block;
+    font-size: 18px;
+    font-weight: 600;
+    color: #000;
+    margin-bottom: 20px;
 }
-  
+.input input{
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #4f7df9;
+    width: 60%;
+    text-align: center;
+    font-size: 28px;
+    font-family: 'Nunito', sans-serif;
 }
-button{
-  border: 0px;
-  height: 32px;
-  padding-left: 24px;
-  padding-right: 24px;
-  background-color: lightgreen;
-  border-radius: 8px;
+button#calculate{
+    font-family: 'Nunito', sans-serif;
+    color: #FFF;
+    background: #4f7df9;
+    font-size: 16px;
+    border-radius: 12px;
+    padding: 12px 0;
+    width: 100%;
+    outline: none;
+    border: none;
+    transition: background .2s ease;
 }
-#calculate-button{
-  background-color: coral;
-  color: white;
+button#calculate:hover{
+    background: #0044ff;
 }
-.judul{
-  text-align: center;
+.result{
+    padding: 30px 20px;
+}
+.result p{
+    font-weight: 600;
+    font-size: 22px;
+    color: #000;
+    margin-bottom: 15px;
+}
+.result #result{
+    font-size: 36px;
+    font-weight: 900;
+    color: #4f7df9;
+    background-color: #eaeaea;
+    display: inline-block;
+    padding: 7px 20px;
+    border-radius: 55px;
+    margin-bottom: 25px;
+}
+#comment{
+    color: #4f7df9;
+    font-weight: 800;
 }
