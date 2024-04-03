@@ -1,9 +1,5 @@
-const btn = document.getElementById('calculate-button');
+const btn = document.getElementById('calculate');
 
-function myFunction(){
-    var x =document.getElementById("sex-man").value;
-    document.getElementById("sex-woman").innerHTML = x;
-}
 
 
 btn.addEventListener('click', function(){
@@ -26,7 +22,7 @@ btn.addEventListener('click', function(){
 
     BMI = BMI.toFixed(2);
 
-    document.querySelector('#hasil').innerHTML = BMI;
+    document.querySelector('#result').innerHTML = BMI;
 
     let status = '';
 
@@ -45,13 +41,5 @@ btn.addEventListener('click', function(){
     if(BMI >=30){
         status = "Kegemukan (obesitas)";
     }
-    document.querySelector('.comment').innerHTML = `komentar: 
-    <span id="comment">${status}</span>`;
-    function myFunction(){
-        var x =document.getElementById("sex-man").value;
-        document.getElementById("sex-woman").innerHTML = x;
-    }
-    document.getElementById('#gender').innerHTML = x;
-   
-
+    document.querySelector('.comment').innerHTML = `<span id="comment">${status}</span>`;
 });
